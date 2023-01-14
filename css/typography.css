@@ -1,0 +1,66 @@
+.heading-sm,
+.heading-md,
+.heading-lg {
+  font-family: Merriweather, sans-serif;
+  font-weight: bold;
+}
+
+.heading-lg {
+  font-size: 80px;
+  line-height: 96px;
+}
+
+.heading-md {
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.heading-sm {
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.heading-xs {
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.body-lg,
+.body-md {
+  font-family: Lato;
+}
+
+.body-lg {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.body-md {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.caption {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+address {
+  font-style: normal;
+}
+
+p {
+  break-inside: avoid-column;
+}
+
+.gutter {
+  margin-bottom: 8px;
+}
+
+:is(p, h1, h2, h3, h4, h5, h6).align-center {
+  text-align: center;
+}

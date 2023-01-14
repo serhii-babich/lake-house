@@ -1,0 +1,20 @@
+.section-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xl);
+  padding: var(--gap-xl) 0;
+}
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-sm);
+}
+
+.section-header.sm {
+  max-width: var(--width-sm);
+}
+
+.section-header.md {
+  max-width: var(--width-md);
+}

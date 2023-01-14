@@ -1,0 +1,71 @@
+footer {
+  background-color: var(--clr-brown-dark);
+  color: white;
+  padding: var(--gap-xl) 0;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-areas: "contacts newsletter" "legal legal";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: var(--gap-xl);
+}
+
+.input {
+  border: 1px solid var(--clr-brown);
+  border-radius: 8px;
+  padding: 16px;
+  width: 100%;
+}
+
+.email-box {
+  position: relative;
+}
+
+.email-box .btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+footer form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-md);
+}
+
+.form-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xs);
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-lg);
+  list-style: none;
+  padding: 0;
+}
+
+.legal {
+  grid-area: legal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--gap-md);
+}
+
+.feedback-author {
+  border-left: 2px solid var(--clr-orange);
+  padding-left: 16px;
+}
+
+@media screen and (max-width: 640px) {
+  .footer-content {
+    grid-template-areas: "contacts" "newsletter" "legal";
+    grid-template-columns: 1fr;
+  }
+}

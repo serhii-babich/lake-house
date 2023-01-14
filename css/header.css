@@ -1,0 +1,26 @@
+.page-header {
+  height: var(--header-height);
+  background-color: #5f4f4999;
+  color: white;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  backdrop-filter: blur(5px);
+}
+
+.page-header .header-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+
+.page-header .main-nav {
+  justify-self: center;
+  display: flex;
+  gap: var(--gap-lg);
+}
+
+.page-header .social {
+  justify-self: end;
+}

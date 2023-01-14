@@ -1,0 +1,39 @@
+.grid-list {
+  --icon-size: 0;
+  --row-gap: 0;
+  --col-gap: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.grid-list-item {
+  display: grid;
+  row-gap: var(--row-gap);
+  column-gap: var(--col-gap);
+}
+
+.grid-list-item .icon {
+  width: var(--icon-size);
+  aspect-ratio: 1;
+  grid-row: span 2;
+}
+
+.grid-list-item:has(.icon) {
+  grid-template-columns: min-content 1fr;
+}
+
+.grid-list-item:has(.icon) p {
+  grid-column: 2;
+}
+
+.grid-list-item:has(.icon) p:first-of-type:last-of-type {
+  align-self: center;
+}
+
+.grid-list-item:has(p + p) {
+  grid-template-rows: auto;
+}
+
+.grid-list-item:has(p + p) p:last-of-type {
+  align-self: start;
+}
